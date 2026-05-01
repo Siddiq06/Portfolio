@@ -1,5 +1,4 @@
 import React from "react";
-import heroImg from "../assets/hero.png";
 
 function Hero() {
   return (
@@ -45,7 +44,7 @@ function Hero() {
 
     <div className="home-right">
       <div className="hero-illustration-wrapper">
-        <img src={heroImg} alt="Developer illustration" />
+       <img src="/Portfolio/hero-illustration.png" alt="Developer illustration" />
       </div>
     </div>
 

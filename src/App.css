@@ -930,11 +930,15 @@ section h2 {
  
   a[href]::after { content: " (" attr(href) ")"; font-size: 10pt; color: #555; }
 }
+
 /* ================= EDUCATION ================= */
 
 #education {
   padding: 90px 8%;
   background-color: var(--surface);
+
+  /* smooth entry without JS */
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 #education h2 {
@@ -951,7 +955,10 @@ section h2 {
   max-width: 900px;
 }
 
+/* CARD */
+
 .education-card {
+  position: relative;
   background: white;
   padding: 28px 32px;
   border-radius: var(--radius);
@@ -960,11 +967,25 @@ section h2 {
   transition: var(--transition);
 }
 
+/* 🔥 LEFT GRADIENT LINE (Lovable style) */
+.education-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 4px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #1c99fe, #7644ff);
+}
+
 .education-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
   box-shadow: 0 18px 38px rgba(28, 153, 254, 0.12);
 }
+
+/* HEADER */
 
 .education-header {
   display: flex;
@@ -985,53 +1006,62 @@ section h2 {
   color: var(--heading);
 }
 
-.education-specialization {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text);
-}
-
 .education-college {
   font-size: 14px;
   font-weight: 600;
   color: var(--accent);
 }
 
+/* RIGHT SIDE */
+
 .education-meta {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 6px;
-  flex-shrink: 0;
 }
 
 .education-date {
   font-size: 13px;
-  font-weight: 500;
   color: var(--muted);
-  white-space: nowrap;
 }
 
 .education-badge {
   font-size: 11px;
   font-weight: 600;
   color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
   background-color: rgba(28, 153, 254, 0.08);
   border: 1px solid rgba(28, 153, 254, 0.2);
   border-radius: 20px;
   padding: 3px 12px;
 }
 
-/* Responsive */
+/* ANIMATION (NO JS NEEDED) */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
-  #education { padding: 60px 5%; }
+  #education {
+    padding: 60px 5%;
+  }
 
   .education-header {
     flex-direction: column;
     gap: 8px;
   }
 
-  .education-meta { align-items: flex-start; }
+  .education-meta {
+    align-items: flex-start;
+  }
 }

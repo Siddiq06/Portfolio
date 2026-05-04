@@ -33,11 +33,11 @@ function Hero() {
       </div>
 
       <div className="home-buttons">
-        <a href="/Abu_resume.pdf" target="_blank" rel="noreferrer">
+        <a href="Abu_resume.pdf" target="_blank" rel="noreferrer">
           <button className="btn-outline">View Resume</button>
         </a>
-        <a href="/Abu_resume.pdf" download="Shaik_Abubakar_Resume.pdf">
-          <button className="btn-solid">Download Resume</button>
+        <a href=#contact>
+          <button className="btn-solid">Get In Touch</button>
         </a>
       </div>
     </div>

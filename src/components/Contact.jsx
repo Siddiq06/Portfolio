@@ -64,11 +64,11 @@ function Contact() {
             <span>GitHub</span>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/siddiq06"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/yourusername
+              github.com/siddiq06
             </a>
           </div>
         </div>

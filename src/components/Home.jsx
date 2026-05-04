@@ -36,7 +36,7 @@ function Hero() {
         <a href="Abu_resume.pdf" target="_blank" rel="noreferrer">
           <button className="btn-outline">View Resume</button>
         </a>
-        <a href=#contact>
+        <a href="#contact">
           <button className="btn-solid">Get In Touch</button>
         </a>
       </div>

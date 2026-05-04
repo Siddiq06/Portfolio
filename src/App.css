@@ -941,7 +941,7 @@ section h2 {
 }
 
 #education h2 {
-  text-align: left;
+  text-align: center;
   font-size: 34px;
   color: var(--heading);
   margin-bottom: 30px;

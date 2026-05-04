@@ -930,7 +930,6 @@ section h2 {
  
   a[href]::after { content: " (" attr(href) ")"; font-size: 10pt; color: #555; }
 }
-
 /* ================= EDUCATION ================= */
 
 #education {
